@@ -10,5 +10,5 @@ but this costs lot of hardware ( > 100,000 transistors easily) :)
 
 
 ### This is still under development. 
-* Looking forward to replace adder from simple + sign to a Carry Lookahead Adder. 
+* Looking forward to replace adder from simple + sign to a Carry Lookahead Adder. (As it makes no sense here if a ripple carry adder used)
 * Make this multiplier parametrised
