@@ -4,3 +4,6 @@ Because, at each stage, parallel addition happen in pairs and stored into regist
 
 ## This multiplier is able to do multiplication which gives result upto 4.29 billion!
 but this costs lot of hardware ( > 100,000 easily) :) 
+
+## Here is the synthesised hardware design
+![Alt text](https://example.com/path/to/image.png)
