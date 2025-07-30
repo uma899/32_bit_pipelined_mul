@@ -6,4 +6,4 @@ Because, at each stage, parallel addition happen in pairs and stored into regist
 but this costs lot of hardware ( > 100,000 easily) :) 
 
 ## Here is the synthesised hardware design
-![Alt text](https://example.com/path/to/image.png)
+![schematic](https://raw.githubusercontent.com/uma899/32_bit_pipelined_mul/refs/heads/main/schematic.jpg)
