@@ -7,3 +7,8 @@ but this costs lot of hardware ( > 100,000 easily) :)
 
 ## Here is the synthesised hardware design
 ![schematic](https://raw.githubusercontent.com/uma899/32_bit_pipelined_mul/refs/heads/main/schematic.jpg)
+
+
+### This is still under development. 
+* Looking forward to replace adder from simple + sign to a Carry Lookahead Adder. 
+* Make this multiplier parametrised
