@@ -1,4 +1,4 @@
-# This is a 32*32 bit pipelined multiplier in verilog
+# This is a 32x32 bit pipelined multiplier in verilog
 This multiplier has 5 main stages (since log 32 base 2 is 5) Why so?
 Because, at each stage, parallel addition happen in pairs and stored into registers in between stages. So after each stage,pairs to add gets halved.
 
