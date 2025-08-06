@@ -13,3 +13,4 @@ but this costs lot of hardware ( > 100,000 transistors easily) :)
 * Make this multiplier parametrised
 
 Note that CLA_adder is modified (that is, carry bit not used) such a way that it fits here in this use case. In this current version, N_bit_adder module was replaced with CLA. 
+Older commit can be seen at [with simple adder](https://github.com/uma899/32_bit_pipelined_mul/commit/28d3134ebd90daa980d8d6c15a1b724964c302c8#diff-cb23eab430db53bf7724d8bb84ea0d08945b3ec7f8e78012f119539d026ccd97)
