@@ -12,4 +12,4 @@ but this costs lot of hardware ( > 100,000 transistors easily) :)
 ### Future aim: 
 * Make this multiplier parametrised
 
-Note that CLA_adder is modified (that is, carry bit not used) such a way that it fits here in this use case.
+Note that CLA_adder is modified (that is, carry bit not used) such a way that it fits here in this use case. In this current version, N_bit_adder module was replaced with CLA. 
