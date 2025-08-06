@@ -5,10 +5,11 @@ Because, at each stage, parallel addition happen in pairs and stored into regist
 ## This multiplier is able to do multiplication which gives result upto 4.29 billion!
 but this costs lot of hardware ( > 100,000 transistors easily) :) 
 
-## Here is the synthesised hardware design
+## Here is the synthesised hardware design (design where simple N_bit_add module used)
 ![schematic](https://raw.githubusercontent.com/uma899/32_bit_pipelined_mul/refs/heads/main/schematic.jpg)
 
 
-### This is still under development. 
-* Looking forward to replace adder from simple + sign to a Carry Lookahead Adder. (As it makes no sense here if a ripple carry adder used)
+### Future aim: 
 * Make this multiplier parametrised
+
+Note that CLA_adder is modified (that is, carry bit not used) such a way that it fits here in this use case.
