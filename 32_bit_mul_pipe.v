@@ -76,9 +76,10 @@ module mul_pipe_32_bit (
 /* Stage 3 start */
     generate
         for (j = 0; j < 16; j = j + 1) begin
-            N_bit_add #(.N(64)) addr1 (
-                .a(partial_products_out[2*j]),
-                .b(partial_products_out[(2*j)+1]),
+            CLA_add #(.N(64)) addr1 (
+                .A(partial_products_out[2*j]),
+                .B(partial_products_out[(2*j)+1]),
+                .clk(clk), .reset(reset),
                 .sum(partial_addition1_out[j])
             );
         end
@@ -97,9 +98,10 @@ module mul_pipe_32_bit (
 /* Stage 4 start */
     generate
         for (j = 0; j < 8; j = j + 1) begin
-            N_bit_add #(.N(64)) addr1 (
-                .a(partial_addition2_in[2*j]),
-                .b(partial_addition2_in[(2*j)+1]),
+            CLA_add #(.N(64)) addr1 (
+                .A(partial_addition2_in[2*j]),
+                .B(partial_addition2_in[(2*j)+1]),
+                .clk(clk), .reset(reset),
                 .sum(partial_addition2_out[j])
             );
         end
@@ -120,9 +122,10 @@ module mul_pipe_32_bit (
 /* Stage 5 start */
     generate
         for (j = 0; j < 4; j = j + 1) begin
-            N_bit_add #(.N(64)) addr1 (
-                .a(partial_addition3_in[2*j]),
-                .b(partial_addition3_in[(2*j)+1]),
+            CLA_add #(.N(64)) addr1 (
+                .A(partial_addition3_in[2*j]),
+                .B(partial_addition3_in[(2*j)+1]),
+                .clk(clk), .reset(reset),
                 .sum(partial_addition3_out[j])
             );
         end
@@ -141,9 +144,10 @@ module mul_pipe_32_bit (
 /* Stage 6 start */
     generate
         for (j = 0; j < 2; j = j + 1) begin
-            N_bit_add #(.N(64)) addr1 (
-                .a(partial_addition4_in[2*j]),
-                .b(partial_addition4_in[(2*j)+1]),
+            CLA_add #(.N(64)) addr1 (
+                .A(partial_addition4_in[2*j]),
+                .B(partial_addition4_in[(2*j)+1]),
+                .clk(clk), .reset(reset),
                 .sum(partial_addition4_out[j])
             );
         end
@@ -162,9 +166,10 @@ module mul_pipe_32_bit (
 
 
 
-    N_bit_add #(.N(64)) addr1 (
-        .a(partial_addition5_in[0]),
-        .b(partial_addition5_in[1]),
+    CLA_add #(.N(64)) addr1 (
+        .A(partial_addition5_in[0]),
+        .B(partial_addition5_in[1]),
+        .clk(clk), .reset(reset),
         .sum(partial_addition5_out)
     );    
 
